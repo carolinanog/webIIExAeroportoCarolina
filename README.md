@@ -15,7 +15,7 @@ ou
 
 - Rode o comando "npm i" na raiz do projeto para se certificar que tem as dependências necessárias para rodar o projeto.
 
-- No terminal, na raiz do projeto, insira o comando "nodemon app".
+- Abrea o terminal na raiz do projeto, e insira o comando "nodemon app".
 
 - Um link aparecerá no terminal. Com o botão CTRL mais um clique do mouse, uma página abrirá em seu navegador.
 
