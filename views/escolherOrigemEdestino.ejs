@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('_head.ejs') %>
+<body>                        
+<%- include('_header.ejs') %>
+
+<div class="jumbotron">
+  <h2 class="display-4">Saiba detalhes dos aeroportos!</h2>
+  <p class="lead">Escolha a cidade de origem/partida e a cidade de destino/chegada para saber os detalhes dos aeroportos de sua viagem:</p>
+<form action="/viaje" method="POST"> 
+<div class="dropdown">
+      <label for="cidade">Cidade de origem/partida:</label>
+      <select name="origem" id="origem">
+        <option disabled selected>Selecione a cidade de origem</option>
+        <%row.forEach(aeroporto => {%>
+          <option value="<%=aeroporto.cod_IATA%>"><%=aeroporto.cidade%></option>
+        <%})%>;
+      </select>
+      <label for="cidade">Cidade de destino/chegada:</label>
+      <select name="destino" id="destino">
+        <option disabled selected>Selecione a cidade de destino</option>
+        <%row.forEach(aeroporto => {%>
+          <option value="<%=aeroporto.cod_IATA%>"><%=aeroporto.cidade%></option>
+        <%})%>
+       
+      </select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>   
+</form>
+</div>
+</body>
+</html>
+

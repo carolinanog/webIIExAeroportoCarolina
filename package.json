@@ -1,0 +1,26 @@
+{
+  "name": "aeroportos-carolina-develas-web-ii",
+  "version": "1.0.0",
+  "description": "DevEL{AS} - Carolina Nogueira - Exercício Aeroportos Programação Web II",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "keywords": [
+    "JS",
+    "prática",
+    "exercício",
+    "NodeJS",
+    "Programação",
+    "Web"
+  ],
+  "author": "Carolina de Araujo Nogueira Tinen",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "sqlite3": "^5.0.11"
+  }
+}
